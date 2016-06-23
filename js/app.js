@@ -27,10 +27,11 @@ $(document).ready(function() {
     $(document).finish().keydown(function(e) {
         if (e.keyCode == 88) {
             $(".ryu-still").hide();
+            $(".ryu-ready").hide();
             $(".ryu-cool").show();
         }
     })
-    $(document).keyup(function() {
+    .keyup(function() {
         $(".ryu-cool").hide();
         $(".ryu-still").show();
     });
